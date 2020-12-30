@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World: src/main/webapp/index.jsp</h2>
+<h2>Hello World Demo Java Web Application: index.jsp</h2>
 </body>
 </html>
