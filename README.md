@@ -295,5 +295,12 @@ Sample java webapp demos how to build a war file to be deployed on a Tomcat serv
     ubuntu@ubuntu-210:~/yaml$ curl 10.195.93.220:30851/Hello
     <h1>Hello World Demo Java Web Application</h1>
     
+    ubuntu@ubuntu-210:~$ curl 10.195.93.220:30851/index.jsp
+    <html>
+    <body>
+    <h2>Hello World Demo Java Web Application: index.jsp</h2>
+    </body>
+    </html>
+    
     
     
