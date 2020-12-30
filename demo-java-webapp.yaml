@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-java-webapp
+  name: demo-java-webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-java-webapp
+  template:
+    metadata:
+      labels:
+        app: demo-java-webapp
+    spec:
+      containers:
+        - image: harbor.haas-210.pez.pivotal.io/dbha/demo-java-webapp
+          name: demo-java-webapp
+          ports:
+            - containerPort: 8080
