@@ -1,0 +1,4 @@
+---
+applications:
+- name: demo-java
+  path: ./target/demo.war

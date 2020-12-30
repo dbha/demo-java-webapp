@@ -1,0 +1,7 @@
+#!/bin/bash -exu
+
+mvn package # creates target/demo.war
+mkdir -p pkg
+mv target/demo-java-webapp.war pkg/demo-java-webapp.war
+
+docker build -t demo-java-webapp .
