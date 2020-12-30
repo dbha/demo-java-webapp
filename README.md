@@ -286,6 +286,11 @@ Sample java webapp demos how to build a war file to be deployed on a Tomcat serv
     ubuntu@ubuntu-210:~/yaml$ kubectl expose deploy demo-java-webapp --name demo-java-webapp-np-svc --type=NodePort --port=8080 --target-port=8080
     service/demo-java-webapp-np-svc exposed
     
+    ubuntu@ubuntu-210:~/yaml$ kubectl get svc
+    NAME                      TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+    demo-java-webapp-np-svc   NodePort    100.66.114.70    <none>        8080:30851/TCP   19m
+    kubernetes                ClusterIP   100.64.0.1       <none>        443/TCP          38d
+    
     # Test
     ubuntu@ubuntu-210:~/yaml$ curl 10.195.93.220:30851/Hello
     <h1>Hello World Demo Java Web Application</h1>
