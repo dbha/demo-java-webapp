@@ -35,9 +35,17 @@ Sample java webapp demos how to build a war file to be deployed on a Tomcat serv
     Getting apps in org test-org / space test-space as tasadmin...
     OK
     name                        requested state   instances   memory   disk   urls
-    demo-java-webapp            started           1/1         1G       1G     demo-java-webapp.apps.haas-210.example.com
+    demo-java-webapp            started           1/1         1G       1G     demo-java-webapp.apps.haas-210.pez.pivotal.io
+       
+    ubuntu@ubuntu-210:~$ curl demo-java-webapp.apps.haas-210.pez.pivotal.io/demo/Hello
+    <h1>Hello World Demo Java Web Application</h1>
     
-    URL: demo-java-webapp.apps.haas-210.example.com/demo/Hello
+    ubuntu@ubuntu-210:~$ curl demo-java-webapp.apps.haas-210.pez.pivotal.io/demo/index.jsp
+    <html>
+    <body>
+    <h2>Hello World: src/main/webapp/index.jsp</h2>
+    </body>
+    </html>
     
 ### 3) TBS
     
