@@ -1,4 +1,10 @@
 ---
 applications:
-- name: demo-java
-  path: ./target/demo.war
+- name: demo-java-webapp
+  path: ./target/demo-java-webapp.war
+  memory: 1G
+  instances: 1
+  buildpacks:
+  - java_buildpack_offline
+  env:
+    JBP_CONFIG_TOMCAT: '[tomcat: {context_path: "/demo"}]'
